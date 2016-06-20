@@ -1,0 +1,33 @@
+{
+  "name": "DeviceNetwork",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mac_addr": {
+      "type": "string"
+    },
+    "ip_addr": {
+      "type": "string"
+    },
+    "mask_addr": {
+      "type": "string"
+    },
+    "gateway_addr": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

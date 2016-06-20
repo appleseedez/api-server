@@ -1,0 +1,27 @@
+{
+  "name": "GlobalAlertThresholdConfig",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "high_volt_threshold": {
+      "type": "number"
+    },
+    "low_volt_threshold": {
+      "type": "number"
+    },
+    "high_elec_threshold": {
+      "type": "number"
+    },
+    "elec_leak_threshold": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

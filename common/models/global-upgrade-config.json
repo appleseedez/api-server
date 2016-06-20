@@ -1,0 +1,24 @@
+{
+  "name": "GlobalUpgradeConfig",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "server_ip": {
+      "type": "string"
+    },
+    "upgrade_bin": {
+      "type": "string"
+    },
+    "upgrade_mode": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

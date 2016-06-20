@@ -1,0 +1,40 @@
+{
+  "name": "DeviceNode",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "node_location": {
+      "type": "string"
+    },
+    "node_name": {
+      "type": "string"
+    },
+    "node_id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true,
+      "comments": "节点id"
+    },
+    "device_id": {
+      "type": "number",
+      "comments": "如果是设备，就有device_id"
+    },
+    "parent_id": {
+      "type": "number",
+      "comments": "父层节点id"
+    },
+    "node_type": {
+      "type": "string",
+      "comments": "节点类型 0为文件夹 1为设备"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

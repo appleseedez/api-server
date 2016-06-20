@@ -1,0 +1,27 @@
+{
+  "name": "DeviceTimer",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "channel_enable": {
+      "type": "number"
+    },
+    "channel_timers": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

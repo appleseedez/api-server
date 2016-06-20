@@ -1,0 +1,58 @@
+{
+  "name": "DeviceInfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "device_name": {
+      "type": "string"
+    },
+    "device_model": {
+      "type": "string"
+    },
+    "device_sn": {
+      "type": "string",
+      "required": false
+    },
+    "vendor": {
+      "type": "string",
+      "required": false
+    },
+    "system_datetime": {
+      "type": "date"
+    },
+    "setup_datetime": {
+      "type": "date",
+      "comments": "安装时间"
+    },
+    "os_version": {
+      "type": "string"
+    },
+    "uptime": {
+      "type": "number",
+      "default": "hardware_version",
+      "comments": "运行时间"
+    },
+    "hardware_version": {
+      "type": "string"
+    },
+    "setup_operator": {
+      "type": "string"
+    },
+    "setup_location": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
