@@ -10,27 +10,34 @@
     "node_location": {
       "type": "string"
     },
+    "node_type": {
+      "type": "string",
+      "comments": "节点类型 0为文件夹 1为设备"
+    },
     "node_name": {
       "type": "string"
     },
-    "node_id": {
+    "x": {
+      "type": "number"
+    },
+    "y": {
       "type": "number",
+      "comments": "zubiao"
+    },
+    "device_id": {
+      "type": "string",
+      "comments": "如果是设备，就有device_id"
+    },
+    "node_id": {
+      "type": "string",
       "id": true,
       "required": true,
       "index": true,
       "comments": "节点id"
     },
-    "device_id": {
-      "type": "number",
-      "comments": "如果是设备，就有device_id"
-    },
     "parent_id": {
-      "type": "number",
-      "comments": "父层节点id"
-    },
-    "node_type": {
       "type": "string",
-      "comments": "节点类型 0为文件夹 1为设备"
+      "comments": "父层节点id"
     }
   },
   "validations": [],

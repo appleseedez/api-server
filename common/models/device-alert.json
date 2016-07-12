@@ -1,5 +1,5 @@
 {
-  "name": "DeviceNetwork",
+  "name": "DeviceAlert",
   "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
@@ -7,19 +7,28 @@
     "validateUpsert": true
   },
   "properties": {
-    "mac_addr": {
-      "type": "string"
-    },
-    "ip_addr": {
-      "type": "string"
-    },
-    "mask_addr": {
-      "type": "string"
-    },
-    "gateway_addr": {
-      "type": "string"
-    },
     "device_id": {
+      "type": "string"
+    },
+    "alert_sn": {
+      "type": "string"
+    },
+    "alert_type": {
+      "type": "string"
+    },
+    "alert_level": {
+      "type": "string"
+    },
+    "alert_date": {
+      "type": "date"
+    },
+    "alert_note": {
+      "type": "string"
+    },
+    "alert_value": {
+      "type": "string"
+    },
+    "alert_id": {
       "type": "string",
       "id": true,
       "required": true,

@@ -1,5 +1,5 @@
 {
-  "name": "DeviceOverlapValveConfig",
+  "name": "DeviceEmail",
   "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
@@ -7,17 +7,20 @@
     "validateUpsert": true
   },
   "properties": {
-    "overlap_count": {
-      "type": "number"
-    },
-    "overlap_delays": {
-      "type": "string"
-    },
-    "device_id": {
+    "to": {
       "type": "string",
-      "id": true,
-      "required": true,
-      "index": true
+      "required": true
+    },
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string"
     }
   },
   "validations": [],

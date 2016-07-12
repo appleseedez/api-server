@@ -2,5 +2,31 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "sqlserverdb": {
+    "host": "localhost",
+    "port": 1433,
+    "url": "mssql://sa:Hello1234@localhost/hello",
+    "database": "hello",
+    "password": "Hello1234",
+    "name": "sqlserverdb",
+    "user": "sa",
+    "connector": "mssql"
+  },
+  "emailDataSource": {
+    "name": "emailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.sina.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "velboy",
+          "pass": "WYqq40384312"
+        }
+      }
+    ]
   }
 }

@@ -91,5 +91,17 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "DeviceAlert": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "DeviceEmail": {
+    "dataSource": "emailDataSource",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

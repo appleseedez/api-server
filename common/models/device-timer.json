@@ -14,7 +14,7 @@
       "type": "string"
     },
     "device_id": {
-      "type": "number",
+      "type": "string",
       "id": true,
       "required": true,
       "index": true
